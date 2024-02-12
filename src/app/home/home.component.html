@@ -1,0 +1,26 @@
+<h1>Home</h1>
+
+<app-datos [datos]="datos"></app-datos>
+<br>
+<form action="">
+<div>
+    <select #tipo name="tipo">
+        <option value="">Seleccione una opcion</option>
+        <option value="1">Administrador</option>
+        <option value="2">Usuario</option>
+    </select>
+    <label for="">Usuario
+        <input type="text" #name name="usuario" id="" required>
+    </label>
+    <label for="">Email
+        <input type="email" #email name="email" id="" required>
+    </label>
+    <label for="">Password
+        <input type="password" #password name="password" id="" required>
+    </label>
+    <button type="button" (click)="registerUser(tipo,name,email,password)">Registrar</button>
+</div>
+
+</form>
+
+<h1>{{mgs}}</h1>
